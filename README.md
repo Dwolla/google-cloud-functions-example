@@ -12,7 +12,7 @@ This small example shows how you can use the Dwolla SDK with Google Cloud Functi
     * [Authenticating](#authenticating)
     * [Deploying Function](#deploying-function)
     * [Visiting HTTP Server](#visiting-http-server)
-* Considerations
+* [Considerations](#considerations)
 
 ## Prerequisites
 
@@ -26,7 +26,7 @@ This small example shows how you can use the Dwolla SDK with Google Cloud Functi
 To deploy this repository to your Google Cloud account, this repository must be cloned to a local machine.
 
 ```shell
-$ git clone [PUT_GIT_URI_HERE]
+$ git clone git@github.com:Dwolla/google-cloud-functions-example.git
 ```
 
 ### Updating Environment Variables
@@ -52,7 +52,7 @@ Variables_](https://cloud.google.com/functions/docs/configuring/env-var).
 ### Authenticating
 
 Before we can deploy our function to Google Cloud, the `gcloud` CLI will require authentication first. Additionally,
-we'll also need to [provide our project ID](https://support.google.com/googleapi/answer/7014113).
+we'll also need to [provide our project ID](https://support.google.com/googleapi/answer/7014113?hl=en).
 
 ```shell
 $ gcloud auth login
@@ -85,8 +85,8 @@ httpsTrigger:
 
 ### Visiting HTTP Server
 
-Based on the output from the [Deploy Function](#deploy-function) section above, you should be able to visit the URL in
-your browser or via the command line using a tool like `curl`.
+Based on the output from the [Deploying Function](#deploying-function) section above, you should be able to visit the
+URL in your browser or via the command line using a tool like `curl`.
 
 ![Deployed Google Cloud Functions Browser View](./images/deployed-browser-view.png)
 
