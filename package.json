@@ -1,0 +1,21 @@
+{
+  "name": "@dwolla/gcp-functions-example",
+  "author": "Dwolla, Inc. <developers@dwolla.com> (https://developers.dwolla.com)",
+  "description": "A simple example showing how to proxy a Dwolla request through Google Cloud Functions.",
+  "license": "MIT",
+  "main": "build/boot.js",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc",
+    "gcp-build": "npm run build",
+    "start": "npx @google-cloud/functions-framework --target=fetchCustomers"
+  },
+  "dependencies": {
+    "@google-cloud/functions-framework": "^3.2.0",
+    "dwolla-v2": "^3.4.0",
+    "typescript": "^5.0.4"
+  },
+  "engines": {
+    "node": "18.x.x"
+  }
+}
